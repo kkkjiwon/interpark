@@ -12,57 +12,54 @@
     max-width: 760px;
     border-bottom: 8px solid #f0f4f4;
   }
-  .header{
+  .header {
     border: none;
   }
-  .header .inner{
+  .header .inner {
     padding-top: 15px;
     height: 230px;
   }
- 
-  .logo{
+
+  .logo {
     width: 77px;
     height: 18px;
-   padding-top: 50px;
-
+    padding-top: 50px;
   }
-  .header-left{
+  .header-left {
     width: 100%;
     /* background-color: bisque; */
   }
-  .search{
-
+  .search {
   }
-  .member-list{
+  .member-list {
     display: none;
   }
-  .mb-mypage{
+  .mb-mypage {
     display: block;
   }
-  .service-menu{
+  .service-menu {
     display: none;
   }
-  .header-down{
+  .header-down {
     justify-content: center;
   }
-  .service-list li{
+  .service-list li {
     display: flex;
     width: 48px;
-
   }
-  .service-list li a{
+  .service-list li a {
     font-size: 12px;
     text-align: center;
   }
-  .service-list li a img{
+  .service-list li a img {
     width: 48px;
     height: 48px;
     margin: 0;
   }
-  .header-left{
+  .header-left {
     flex: none;
   }
-  .search{
+  .search {
     position: absolute;
     top: 157px;
     left: 50%;
