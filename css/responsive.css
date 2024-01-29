@@ -3,7 +3,7 @@
   .inner {
     max-width: 1024px;
   }
-  .promotion .inner {
+  .promotion .inner{
     height: 275px;
   }
 }
@@ -15,107 +15,105 @@
     max-width: 760px;
     border-bottom: 8px solid #f0f4f4;
   }
-  .sw-bt {
+  .sw-bt{
     display: none;
   }
-  .wrap > section {
+  .wrap > section{
     padding-top: 30px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
   }
-  .section-top > h2 {
+  .section-top > h2{
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
     margin-bottom: 0;
   }
-  .section-top > p {
+  .section-top >p{
     font-size: 15px;
     line-height: 18px;
   }
   .section-top .btns {
     margin: 15px 0;
     white-space: nowrap;
+
   }
-  .section-top .btns a {
+  .section-top .btns a{
     line-height: 34px;
     padding: 0 14px;
     margin-right: 5px;
   }
-  .bt-link-shop {
+  .bt-link-shop{
     line-height: 48px;
     font-size: 15px;
     border-radius: 3px;
+    display: block;
+    /* width: 50%; */
+    width: 100%;
   }
-  .quick-menu {
+  .quick-menu{
     display: block;
     padding-bottom: 0;
   }
-  .quick-menu .inner {
+  .quick-menu .inner{
     border-bottom: 0;
   }
-  .header {
+  .header{
     border: none;
   }
-  .header .inner {
+  .header .inner{
     padding-top: 15px;
     height: 230px;
   }
-  .logo {
+ 
+  .logo{
     width: 77px;
     height: 18px;
-    padding-top: 50px;
+   padding-top: 50px;
+
   }
-  .header-left {
+  .header-left{
     width: 100%;
     /* background-color: bisque; */
   }
-  .search {
+  .search{
+
   }
-  .member-list {
+  .member-list{
     display: none;
   }
-  .mb-mypage {
+  .mb-mypage{
     display: block;
   }
-  .service-menu {
+  .service-menu{
     display: none;
   }
-  .header-down {
+  .header-down{
     justify-content: center;
   }
-  .service-list li {
+  .service-list li{
     display: flex;
     width: 48px;
+
   }
-  .service-list li a {
+  .service-list li a{
     font-size: 12px;
     text-align: center;
   }
-  .service-list li a img {
+  .service-list li a img{
     width: 48px;
     height: 48px;
     margin: 0;
   }
-  .header-left {
+  .header-left{
     flex: none;
   }
-  .search {
+  .search{
     position: absolute;
     top: 157px;
     left: 50%;
     transform: translatex(-50%);
   }
   /* 프로모션 */
-  .promotion .inner {
+  .promotion .inner{
     height: 300px;
-  }
-  .promotion .section-top {
-    display: block;
-  }
-  .sw-promotion-control {
-    display: block;
-  }
-  .sw-promotion-pg .sw-promotion-bullet {
-    width: 8px;
-    height: 8px;
   }
 }
