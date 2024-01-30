@@ -3,7 +3,7 @@
   .inner {
     max-width: 1024px;
   }
-  .promotion .inner {
+  .promotion .inner{
     height: 275px;
   }
   .books-img{
@@ -18,32 +18,33 @@
     max-width: 760px;
     border-bottom: 8px solid #f0f4f4;
   }
-  .sw-bt {
+  .sw-bt{
     display: none;
   }
-  .wrap > section {
+  .wrap > section{
     padding-top: 30px;
     padding-bottom: 0px;
   }
-  .section-top > h2 {
+  .section-top > h2{
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 0;
   }
-  .section-top > p {
+  .section-top >p{
     font-size: 15px;
     line-height: 18px;
   }
   .section-top .btns {
     margin: 15px 0;
     white-space: nowrap;
+
   }
-  .section-top .btns a {
+  .section-top .btns a{
     line-height: 34px;
     padding: 0 14px;
     margin-right: 5px;
   }
-  .bt-link-shop {
+  .bt-link-shop{
     line-height: 48px;
     font-size: 15px;
     border-radius: 3px;
@@ -51,143 +52,149 @@
     /* width: 50%; */
     width: 100%;
   }
-  .quick-menu {
+  .quick-menu{
     display: block;
     padding-bottom: 0;
   }
-  .quick-menu .inner {
+  .quick-menu .inner{
     border-bottom: 0;
   }
-  .header {
+  .header{
     border: none;
   }
-  .header .inner {
+  .header .inner{
     padding-top: 15px;
     height: 230px;
   }
-
-  .logo {
+ 
+  .logo{
     width: 77px;
     height: 18px;
-    padding-top: 50px;
+   padding-top: 50px;
+
   }
-  .header-left {
+  .header-left{
     width: 100%;
     /* background-color: bisque; */
   }
-  .search {
+  .search{
+
   }
-  .member-list {
+  .member-list{
     display: none;
   }
-  .mb-mypage {
+  .mb-mypage{
     display: block;
   }
-  .service-menu {
+  .service-menu{
     display: none;
   }
-  .header-down {
+  .header-down{
     justify-content: center;
   }
-  .service-list li {
+  .service-list li{
     display: flex;
     width: 48px;
+
   }
-  .service-list li a {
+  .service-list li a{
     font-size: 12px;
     text-align: center;
   }
-  .service-list li a img {
+  .service-list li a img{
     width: 48px;
     height: 48px;
     margin: 0;
   }
-  .header-left {
+  .header-left{
     flex: none;
   }
-  .search {
+  .search{
     position: absolute;
     top: 157px;
     left: 50%;
     transform: translatex(-50%);
   }
   /* 프로모션 */
-  .promotion .inner {
+  .promotion .inner{
     height: 300px;
   }
-  .promotion .section-top {
+  .promotion .section-top{
     display: block;
   }
-  .sw-promotion-control {
+  .sw-promotion-control{
     display: block;
   }
-  .sw-promotion-pg {
+  .sw-promotion-pg{
     margin-top: 10px;
+   
   }
-  .sw-promotion-pg .sw-promotion-bullet {
+  .sw-promotion-pg .sw-promotion-bullet{
     width: 8px;
     height: 8px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
     opacity: 0.2;
-    background-color: #000;
+    background-color: #000 ;
   }
   .sw-promotion-pg .swiper-pagination-bullet-active {
     opacity: 1;
     background-color: #e34949;
   }
   /* 추천상품 */
-
+ 
   .good-info {
     padding: 10px;
   }
-  /* 투어추천 */
-  .tour-info {
-    padding: 10px;
-  }
-  .tour-cate {
-    top: -25px;
-    line-height: 22px;
-    padding: 0 7px;
-    border-radius: 4px;
-    font-size: 13px;
-    font-weight: 500;
-  }
-  .tour-title {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 5px;
-  }
-  .tour-price {
-    font-size: 15px;
-  }
-  .tour-place {
-    font-size: 13px;
-  }
-  .tour-price b {
-    font-size: 15px;
-    line-height: 18px;
-  }
-  /* 티켓 랭킹 */
-  .ticket-rank {
-  }
-  .ticket-img img {
-    transform: translate(-50%, -50%) scale(1.4);
-  }
-  .sw-ticket .swiper-slide {
-    width: 150px;
-  }
-  .ticket-title b {
-    font-size: 15px;
-  }
-  .ticket-hall {
-    font-size: 13px;
-  }
-  .bt-link-shop {
-    margin-top: 10px;
-  }
-  /* 오늘의 도서 */
+ /* 투어추천 */
+ .tour-info {
+  padding: 10px;
+}
+.tour-cate{
+  top: -25px;
+  line-height: 22px;
+  padding: 0 7px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+ 
+}
+.tour-title{
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.tour-price{
+  font-size: 15px;
+}
+.tour-place{
+  font-size: 13px;
+}
+.tour-price b{
+  font-size: 15px;
+  line-height: 18px;
+}
+/* 티켓 랭킹 */
+.ticket-rank{
+
+}
+.ticket-img img{
+  transform: translate(-50%, -50%) scale(1.4);
+}
+.sw-ticket .swiper-slide{
+  width: 150px;
+}
+.ticket-title b{
+  font-size:15px ;
+}
+.ticket-hall{
+  font-size: 13px;
+}
+.bt-link-shop{
+  margin-top: 10px;
+}
+/* 오늘의 도서 */
 .books-img{
   height: 322px;
 }
@@ -217,13 +224,19 @@
 }
 }
 /* 1024px 끝 */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
+
+  .ticket .section-top .btns {
+   width: 100%;
+   background-color: ;
+
+  }
   .good-info li b{
     font-size: 15px;
     line-height: 18px;
     white-space: nowrap;
   }
-  .godd-info{
+  .good-info{
     padding: 10px;
   }
   .live .section-slide{
@@ -288,6 +301,7 @@
     width: 50%;
     max-width: 350px;
     /* background-color: #e34949; */
+
   }
   .sw-promotion-control{
     margin-top: -30px;
@@ -304,7 +318,7 @@
     opacity: 1;
     width: 8px;
     height: 8px;
-    background-color: #fff;
+    background-color: #ff1717;
   }
   .good-info-list li b {
     font-size: 12px;
@@ -317,6 +331,13 @@
     font-size: 13px;
     line-height: 16px;
     height: 32px;
+  }
+  .ticket .btns{
+
+  }
+  .ticket .btns a{
+/* padding: 5px 5px;
+line-height: 16px; */
   }
   .ticket-info {
     padding: 10px 5px;
@@ -364,12 +385,14 @@
     padding: 0 10px;
   }
   .live-info-desc {
-    float: right;
+    /* float: right; */
     width: 100%;
   }
   /* 화면이 좁을 때 이미지 숨김 */
   .live-info-thumb {
     display: none;
   }
-  
+  .books-img {
+    height: 41.66vw;
+  }
 }

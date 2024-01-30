@@ -1,4 +1,20 @@
 window.onload = function () {
+  window.addEventListener('scroll', function() {
+    const gotopButton = document.querySelector('.gotop');
+    if (window.scrollY > 200) {
+      gotopButton.style.display = 'block';
+    } else {
+      gotopButton.style.display = 'none';
+    }
+  });
+
+  // 페이지 맨 위로 스크롤하는 함수
+  document.querySelector('.gotop').addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
   // <!-- promotion swiper -->
   var swiper = new Swiper(".sw-promotion", {
     slidesPerView: 1,
@@ -129,9 +145,9 @@ window.onload = function () {
   var swiper = new Swiper(".sw-books", {
     slidesPerView: 3,
     spaceBetween: 19,
-    grid: {
-      rows: 4,
-      fill: "row"
+    grid:{
+      rows:3,
+      fill:"row"
     },
     breakpoints: {
       1024: {
@@ -151,6 +167,7 @@ window.onload = function () {
         },
       },
     },
+    
   });
   //   events swiper
   var swiper = new Swiper(".sw-events", {
@@ -162,37 +179,7 @@ window.onload = function () {
       },
     },
   });
-  //   top 버튼 스크롤 기능
-  const topBtn = document.getElementById("gotop");
 
-  topBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    console.log(window.scrollY);
-
-    if (window.scrollY == 0) {
-      window.scrollTo({
-        top: 4500,
-        behavior: "smooth",
-      });
-    } else {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-  });
-
-  // 화살표 이미지 회전
-  const topBtnImg = document.getElementById("gotop-img");
-  window.addEventListener("scroll", function (scTop) {
-    scTop = window.document.documentElement.scrollTop;
-    if (scTop > 0) {
-      topBtnImg.classList.add("up");
-    } else {
-      topBtnImg.classList.remove("up");
-    }
-  });
 
 
 };
