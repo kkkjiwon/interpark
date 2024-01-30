@@ -10,8 +10,12 @@ window.onload = function () {
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: ".promotion .section-slide .sw-next",
-      prevEl: ".promotion .section-slide .sw-prev",
+      nextEl: ".promotion .sw-next",
+      prevEl: ".promotion .sw-prev",
+    },
+    pagination: {
+      el: ".sw-promotion-pg",
+      clickable: true,
     },
     breakpoints: {
       760: {
@@ -19,20 +23,14 @@ window.onload = function () {
       },
     },
   });
-
   //  shopping swiper
   var swiper = new Swiper(".sw-shopping", {
     slidesPerView: 5,
-    spaceBetween: 10,
-    loop: true,
     grid: {
       rows: 2,
       fill: "row",
     },
-    navigation: {
-      nextEl: ".shopping .section-slide .sw-next",
-      prevEl: ".shopping .section-slide .sw-prev",
-    },
+    spaceBetween: 10,
     breakpoints: {
       900: {
         spaceBetween: 32,
@@ -63,7 +61,6 @@ window.onload = function () {
       },
     },
   });
-
   //  Tour Swiper
   var swiper = new Swiper(".sw-tour", {
     slidesPerView: 3,
@@ -74,8 +71,8 @@ window.onload = function () {
     },
     loop: true,
     navigation: {
-      nextEl: ".tour .section-slide .sw-next",
-      prevEl: ".tour .section-slide .sw-prev",
+      nextEl: ".tour .sw-next",
+      prevEl: ".tour .sw-prev",
     },
     breakpoints: {
       1024: {
@@ -98,15 +95,10 @@ window.onload = function () {
       },
     },
   });
-
   //   ticket swiper
   var swiper = new Swiper(".sw-ticket", {
     slidesPerView: "auto",
     spaceBetween: 10,
-    navigation: {
-      nextEl: ".ticket .section-slide .sw-next",
-      prevEl: ".ticket .section-slide .sw-prev",
-    },
     breakpoints: {
       1024: {
         slidesPerView: 3,
@@ -122,35 +114,48 @@ window.onload = function () {
   var swiper = new Swiper(".sw-live", {
     slidesPerView: 4,
     spaceBetween: 10,
-    // breakpoints: {
-    //   1024: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 32,
-    //   },
-    //   1280: {
-    //     slidesPerView: 4,
-    //     spaceBetween: 27,
-    //   },
-    // },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 27,
+      },
+    },
   });
   //   books swiper
   var swiper = new Swiper(".sw-books", {
-    slidesPerView: 5,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".books .section-slide .sw-next",
-      prevEl: ".books .section-slide .sw-prev",
+    slidesPerView: 3,
+    spaceBetween: 19,
+    grid: {
+      rows: 4,
+      fill: "row"
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 30,
+        grid: {
+          rows: 1,
+        },
+      },
+      1280: {
+        slidesPerView: 5,
+        slidesPerGroup: 5,
+        spaceBetween: 27,
+        grid: {
+          rows: 1,
+        },
+      },
     },
   });
-
   //   events swiper
   var swiper = new Swiper(".sw-events", {
     slidesPerView: 3,
     spaceBetween: 27,
-    navigation: {
-      nextEl: ".event .section-slide .sw-next",
-      prevEl: ".event .section-slide .sw-prev",
-    },
     breakpoints: {
       1280: {
         slidesPerView: 4,
