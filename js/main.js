@@ -162,4 +162,37 @@ window.onload = function () {
       },
     },
   });
+  //   top 버튼 스크롤 기능
+  const topBtn = document.getElementById("gotop");
+
+  topBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    console.log(window.scrollY);
+
+    if (window.scrollY == 0) {
+      window.scrollTo({
+        top: 4500,
+        behavior: "smooth",
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  });
+
+  // 화살표 이미지 회전
+  const topBtnImg = document.getElementById("gotop-img");
+  window.addEventListener("scroll", function (scTop) {
+    scTop = window.document.documentElement.scrollTop;
+    if (scTop > 0) {
+      topBtnImg.classList.add("up");
+    } else {
+      topBtnImg.classList.remove("up");
+    }
+  });
+
+
 };
