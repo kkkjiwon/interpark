@@ -1,20 +1,28 @@
 window.onload = function () {
-  window.addEventListener('scroll', function() {
-    const gotopButton = document.querySelector('.gotop');
-    if (window.scrollY > 200) {
-      gotopButton.style.display = 'block';
+  // 모달창 ==============================
+  const body = document.querySelector("body");
+  const modal = document.querySelector(".modal-wrap");
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    fadeout(modal);
+  });
+  //isOpen 값에 따라 스크롤을 제어하는 함수
+  function controlScroll(isOpen) {
+    if (isOpen) {
+      body.style.overflow = "hidden";
     } else {
-      gotopButton.style.display = 'none';
+      body.style.overflow = "auto";
     }
+  }
+  // 초기 모달 상태 설정
+  const isOpen = true;
+  controlScroll(isOpen);
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    // 모달이 닫힐 때는 스크롤을 다시 활성화
+    controlScroll(false);
   });
-
-  // 페이지 맨 위로 스크롤하는 함수
-  document.querySelector('.gotop').addEventListener('click', function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
+  // ===========================================
   // <!-- promotion swiper -->
   var swiper = new Swiper(".sw-promotion", {
     slidesPerView: 1,
@@ -145,9 +153,9 @@ window.onload = function () {
   var swiper = new Swiper(".sw-books", {
     slidesPerView: 3,
     spaceBetween: 19,
-    grid:{
-      rows:3,
-      fill:"row"
+    grid: {
+      rows: 3,
+      fill: "row",
     },
     breakpoints: {
       1024: {
@@ -167,7 +175,6 @@ window.onload = function () {
         },
       },
     },
-    
   });
   //   events swiper
   var swiper = new Swiper(".sw-events", {
@@ -179,7 +186,37 @@ window.onload = function () {
       },
     },
   });
-
-
-
+  // const topBtn = document.getElementById("gotop");
+  // topBtn.addEventListener("click", function (event) {
+  //   event.preventDefault();
+  //   // console.log(window.scrollY);
+  //   if (window.scrollY == 0) {
+  //     window.scrollTo({
+  //       top: 9999,
+  //       behavior: "smooth",
+  //     });
+  //   } else {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // });
+  const topBtn = document.getElementById("gotop");
+  topBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (window.scrollY == 0) {
+      // 현재 스크롤 위치가 0이면 페이지 맨 아래로 스크롤
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth",
+      });
+    } else {
+      // 현재 스크롤 위치가 0이 아니면 페이지 맨 위로 스크롤
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  });
 };
